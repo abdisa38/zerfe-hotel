@@ -6,7 +6,7 @@ import Rooms from './pages/Rooms'
 import RoomDetails from './pages/RoomDetails'
 import Restaurant from './pages/Restaurant'
 import Conference from './pages/Conference'
-import ExploreAsella from './pages/ExploreAsella'
+import ExploreBale from './pages/ExploreBale'
 import Gallery from './pages/Gallery'
 import About from './pages/About'
 import Contact from './pages/Contact'
@@ -21,8 +21,8 @@ function App() {
           <Route path="rooms/:id" element={<RoomDetails />} />
           <Route path="restaurant" element={<Restaurant />} />
           <Route path="conference" element={<Conference />} />
-          <Route path="explore-bale" element={<ExploreAsella />} />
-          <Route path="explore-asella" element={<ExploreAsella />} />
+          <Route path="explore-bale" element={<ExploreBale />} />
+          <Route path="explore-asella" element={<ExploreBale />} />
           <Route path="gallery" element={<Gallery />} />
           <Route path="about" element={<About />} />
           <Route path="contact" element={<Contact />} />

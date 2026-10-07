@@ -3,7 +3,7 @@ import { MapPin, Navigation } from 'lucide-react'
 import PageHeader from '../components/PageHeader'
 import { attractions, hotelInfo } from '../constants/hotelData'
 
-const ExploreAsella = () => {
+const ExploreBale = () => {
   return (
     <div className="min-h-screen">
       <PageHeader
@@ -168,4 +168,4 @@ const ExploreAsella = () => {
   )
 }
 
-export default ExploreAsella
+export default ExploreBale

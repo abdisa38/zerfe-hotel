@@ -157,8 +157,8 @@ const About = () => {
               </h2>
               <p className="text-white text-opacity-90 leading-relaxed">
                 Our dedicated team of hospitality professionals works around the clock to ensure 
-                your stay at Derartu Hotel exceeds expectations. From our front desk staff to our 
-                housekeeping team, from our talented chefs to our concierge service, every member 
+                your stay at Zerfe Hotel & Lounge exceeds expectations. From our front desk staff to our 
+                housekeeping team, from our talented chefs to our lounge service, every member 
                 is committed to making your experience memorable.
               </p>
               <p className="text-white text-opacity-90 leading-relaxed">

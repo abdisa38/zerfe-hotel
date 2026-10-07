@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { Calendar, Users, Bed, ArrowRight } from 'lucide-react'
 import { useNavigate } from 'react-router-dom'
+import { rooms } from '../constants/hotelData'
 
 const BookingWidget = ({ className = '' }) => {
   const navigate = useNavigate()
@@ -96,10 +97,11 @@ const BookingWidget = ({ className = '' }) => {
                 className="w-full pl-11 pr-4 py-3 border border-border rounded-luxury focus:outline-none focus:border-gold transition-colors appearance-none bg-white"
               >
                 <option value="any">Any Room</option>
-                <option value="single">Single Room</option>
-                <option value="twin">Twin Room</option>
-                <option value="deluxe">Deluxe Room</option>
-                <option value="suite">Executive Suite</option>
+                {rooms.map((room) => (
+                  <option key={room.id} value={room.id}>
+                    {room.name} (ETB {room.price}/night)
+                  </option>
+                ))}
               </select>
             </div>
           </div>

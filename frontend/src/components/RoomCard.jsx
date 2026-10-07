@@ -40,7 +40,7 @@ const RoomCard = ({ room, index = 0 }) => {
         <div className="flex items-center space-x-6 text-sm text-gray">
           <div className="flex items-center space-x-2">
             <Users className="w-4 h-4 text-gold" />
-            <span>{room.capacity} {room.capacity === 1 ? 'Guest' : 'Guests'}</span>
+            <span>{room.capacityText || (typeof room.capacity === 'number' ? `${room.capacity} ${room.capacity === 1 ? 'Guest' : 'Guests'}` : room.capacity)}</span>
           </div>
           <div className="flex items-center space-x-2">
             <Maximize className="w-4 h-4 text-gold" />
