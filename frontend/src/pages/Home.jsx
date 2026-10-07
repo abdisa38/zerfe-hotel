@@ -13,13 +13,13 @@ import RoomCard from '../components/RoomCard'
 import TestimonialCard from '../components/TestimonialCard'
 import Counter from '../components/Counter'
 import FAQ from '../components/FAQ'
-import { hotelInfo, stats, services, rooms, testimonials, faqs } from '../constants/hotelData'
+import { hotelInfo, stats, services, rooms, testimonials, faqs, mediaAssets } from '../constants/hotelData'
 
 const Home = () => {
   const heroImages = [
-    'https://lh3.googleusercontent.com/gps-cs-s/APNQkAEQxNXnjlhMZZ_QgtSX3dtguGPJ-n0WvAsbNxqu1rLG3hO_UKX_ncEcsHriF9DwLu_DiX6tYTW2WuwHqUMa-iJ-pL18e-S63pxq_RWivVrobzTI8BR1US6RFiG6gZWA2pVdYY1U=s680-w680-h510-rw',
-    'https://lh3.googleusercontent.com/gps-cs-s/APNQkAFerrzNn7DOMjB8OVC17uTVIHuU7HR46Wp2LqO-dKXYXQKV-owHrVvOt8gOrT4HhnV4dZd-vyysxmszScajmZ9cc34HW5-1XnXpMrNVwG-Nz2vevGmenc-K66XTSO_sa8-1MlGv=s680-w680-h510-rw',
-    'https://lh3.googleusercontent.com/gps-cs-s/APNQkAHiG_3uaYHbEhuXcnG5vfVHf9H5KXNIp2c6GRWnn4UiEA6SUxlqjTZXOh9rBSoZVTJgy6sbaIqUZzy8sxXi29dfblPEs8CkOm2bTRS4AivAysJRFebkIAvKc1RMzl0k_fySCL0y=s680-w680-h510-rw',
+    mediaAssets?.heroBanner || 'https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1600&q=80',
+    mediaAssets?.loungeInterior || 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=80',
+    mediaAssets?.diningArea || 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1200&q=80',
   ]
 
   return (
@@ -39,7 +39,7 @@ const Home = () => {
               <div className="relative h-full">
                 <img
                   src={image}
-                  alt={`Derartu Hotel ${index + 1}`}
+                  alt={`Zerfe Hotel & Lounge ${index + 1}`}
                   className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-b from-primary/60 via-primary/40 to-primary/60" />
@@ -123,10 +123,10 @@ const Home = () => {
               viewport={{ once: true }}
               className="relative"
             >
-              <div className="relative h-[500px] rounded-luxury overflow-hidden">
+              <div className="relative h-[500px] rounded-luxury overflow-hidden shadow-2xl">
                 <img
-                  src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAGqzqd6D2s6yUwuMSNgNH6FAPInbBUZRSCOSevpkmjKEzABvJNMngKWU4w_BT4sthTyT9zN1EZnBmqMIssiZ0jLJg5ANij-xG9m8qbSGYLmLjS39-qzyc1EIbDgqN7YSTgCTTrZmDk9r4Tj=s680-w680-h510-rw"
-                  alt="Hotel Interior"
+                  src={mediaAssets?.loungeInterior || 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=80'}
+                  alt="Zerfe Lounge Interior"
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -138,8 +138,8 @@ const Home = () => {
                 className="absolute -bottom-8 -right-8 w-64 h-64 rounded-luxury overflow-hidden shadow-2xl hidden md:block"
               >
                 <img
-                  src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAFerrzNn7DOMjB8OVC17uTVIHuU7HR46Wp2LqO-dKXYXQKV-owHrVvOt8gOrT4HhnV4dZd-vyysxmszScajmZ9cc34HW5-1XnXpMrNVwG-Nz2vevGmenc-K66XTSO_sa8-1MlGv=s680-w680-h510-rw"
-                  alt="Hotel Room"
+                  src={mediaAssets?.diningArea || 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1200&q=80'}
+                  alt="Zerfe Dining"
                   className="w-full h-full object-cover"
                 />
               </motion.div>
@@ -153,18 +153,18 @@ const Home = () => {
               className="space-y-6"
             >
               <p className="text-gold text-sm tracking-[0.3em] uppercase">
-                About Derartu Hotel
+                About Zerfe Hotel & Lounge
               </p>
               <h2 className="text-4xl md:text-5xl font-playfair font-bold text-primary">
-                Experience Ethiopian Hospitality at Its Finest
+                Comfortable Stays & Vibrant Dining in Bale Robe
               </h2>
               <p className="text-gray leading-relaxed">
-                Nestled in the heart of Asella, Oromia, Derartu Hotel stands as a beacon of comfort and luxury. 
-                Our hotel combines traditional Ethiopian warmth with modern amenities to create an unforgettable experience for every guest.
+                Located in the heart of Robe, Zerfe Hotel & Lounge offers restful accommodations, authentic local hospitality, 
+                and a welcoming lounge experience for business travelers, tourists heading to the Bale Mountains, and locals alike.
               </p>
               <p className="text-gray leading-relaxed">
-                With 27 elegantly appointed rooms, a renowned restaurant serving authentic Ethiopian and international cuisine, 
-                state-of-the-art conference facilities, and 24/7 exceptional service, we cater to both business and leisure travelers.
+                With modern well-appointed rooms, a celebrated restaurant serving regional specialties like Bale Special Shekla Tibs, 
+                a full-service bar & social lounge, 24/7 hot showers, and reliable power backup, we ensure a warm and seamless stay.
               </p>
               <div className="grid grid-cols-2 gap-6 pt-6">
                 {stats.map((stat, index) => (
@@ -338,10 +338,10 @@ const Home = () => {
             viewport={{ once: true }}
           >
             <h2 className="text-4xl md:text-5xl font-playfair font-bold text-white mb-6">
-              Ready to Experience Luxury?
+              Ready to Experience Zerfe Hotel & Lounge?
             </h2>
             <p className="text-white text-opacity-90 text-lg mb-8 leading-relaxed">
-              Book your stay at Derartu Hotel and discover the perfect blend of comfort, elegance, and Ethiopian hospitality.
+              Book your stay at Zerfe Hotel & Lounge and enjoy authentic local hospitality in the heart of Bale Robe.
             </p>
             <Link to="/contact">
               <motion.button

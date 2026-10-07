@@ -45,12 +45,18 @@ const Contact = () => {
   const contactInfo = [
     {
       icon: MapPin,
-      title: 'Address',
-      content: hotelInfo.location,
+      title: 'Address & Location',
+      content: (
+        <div>
+          <p>{hotelInfo.street}, {hotelInfo.location}</p>
+          <p className="text-xs text-gold mt-1 font-mono">Plus Code: {hotelInfo.plusCode}</p>
+          <p className="text-xs text-gray mt-1">{hotelInfo.directionsNote}</p>
+        </div>
+      ),
     },
     {
       icon: Phone,
-      title: 'Phone',
+      title: 'Phone & Front Desk',
       content: hotelInfo.phones.map((phone, i) => (
         <div key={i}>
           <a href={`tel:${phone}`} className="hover:text-gold transition-colors">
@@ -70,11 +76,30 @@ const Contact = () => {
     },
     {
       icon: MessageCircle,
-      title: 'Telegram',
+      title: 'Telegram & WhatsApp',
       content: (
-        <a href={`https://t.me/${hotelInfo.telegram.replace('@', '')}`} className="hover:text-gold transition-colors">
-          {hotelInfo.telegram}
-        </a>
+        <div className="space-y-1">
+          <div>
+            <a
+              href={hotelInfo.telegramUrl || `https://t.me/${hotelInfo.telegram.replace('@', '')}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-gold transition-colors"
+            >
+              Telegram: {hotelInfo.telegram}
+            </a>
+          </div>
+          <div>
+            <a
+              href={`https://wa.me/${hotelInfo.whatsapp.replace('+', '')}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-gold transition-colors"
+            >
+              WhatsApp: {hotelInfo.whatsapp}
+            </a>
+          </div>
+        </div>
       ),
     },
   ]
@@ -279,7 +304,7 @@ const Contact = () => {
               Find Us
             </h2>
             <p className="text-gray">
-              Located in the heart of Asella, Oromia, Ethiopia
+              Located in the heart of Robe, Bale Zone, Oromia, Ethiopia ({hotelInfo.plusCode})
             </p>
           </motion.div>
 
@@ -290,13 +315,13 @@ const Contact = () => {
             className="relative h-96 rounded-luxury overflow-hidden shadow-2xl"
           >
             <iframe
-              src={`https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.5!2d${hotelInfo.coordinates.lng}!3d${hotelInfo.coordinates.lat}!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zN8KwNTcnMTQuMCJOIDM5wrAwOCcwNy4xIkU!5e0!3m2!1sen!2set!4v1234567890`}
+              src={`https://maps.google.com/maps?q=${hotelInfo.coordinates.lat},${hotelInfo.coordinates.lng}&hl=en&z=15&output=embed`}
               width="100%"
               height="100%"
               style={{ border: 0 }}
               allowFullScreen
               loading="lazy"
-              title="Derartu Hotel Location"
+              title="Zerfe Hotel & Lounge Location"
             />
           </motion.div>
         </div>

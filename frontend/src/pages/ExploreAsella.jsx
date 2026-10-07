@@ -1,15 +1,15 @@
 import { motion } from 'framer-motion'
 import { MapPin, Navigation } from 'lucide-react'
 import PageHeader from '../components/PageHeader'
-import { attractions } from '../constants/hotelData'
+import { attractions, hotelInfo } from '../constants/hotelData'
 
 const ExploreAsella = () => {
   return (
     <div className="min-h-screen">
       <PageHeader
-        title="Explore Asella"
-        subtitle="Discover the beauty and culture of Asella and its surroundings"
-        image="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=2070"
+        title="Explore Bale"
+        subtitle="Discover the breathtaking wilderness of Bale Robe and the Bale Mountains"
+        image="https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=2070&q=80"
       />
 
       {/* Intro */}
@@ -22,12 +22,13 @@ const ExploreAsella = () => {
           >
             <Navigation className="w-16 h-16 text-gold mx-auto mb-6" />
             <h2 className="text-4xl font-playfair font-bold text-primary mb-6">
-              Welcome to Asella
+              Welcome to Bale Robe
             </h2>
             <p className="text-gray leading-relaxed text-lg">
-              Asella, located in the Arsi Zone of Oromia, is a vibrant city known for producing some of Ethiopia's 
-              greatest distance runners. Beyond its athletic legacy, Asella offers stunning natural landscapes, 
-              cultural richness, and warm hospitality. Let us guide you through the best experiences our city has to offer.
+              Robe, the bustling capital of the Bale Zone in Oromia, serves as the prime gateway to 
+              one of Africa's most breathtaking natural treasures — the Bale Mountains National Park. 
+              Set amidst highland landscapes, Robe offers authentic Ethiopian warmth, lively town markets, 
+              and effortless access to afro-alpine plateaus, rare endemic wildlife, and sacred historical sites.
             </p>
           </motion.div>
         </div>
@@ -46,7 +47,7 @@ const ExploreAsella = () => {
               Must-Visit Destinations
             </h2>
             <p className="text-gray">
-              Explore the wonders around Derartu Hotel
+              Explore the wonders around Zerfe Hotel & Lounge
             </p>
           </motion.div>
 
@@ -69,13 +70,13 @@ const ExploreAsella = () => {
                     alt={attraction.name}
                     className="w-full h-full object-cover"
                   />
-                  <div className="absolute top-4 right-4 bg-gold text-white px-4 py-2 rounded-full text-sm font-medium flex items-center space-x-2">
-                    <MapPin className="w-4 h-4" />
+                  <div className="absolute top-4 right-4 bg-primary bg-opacity-80 backdrop-blur-sm text-white px-3 py-1 rounded-full text-xs font-medium flex items-center space-x-1">
+                    <MapPin className="w-3 h-3 text-gold" />
                     <span>{attraction.distance}</span>
                   </div>
                 </div>
                 <div className="p-6">
-                  <h3 className="text-2xl font-playfair font-semibold text-primary mb-3">
+                  <h3 className="text-xl font-playfair font-semibold text-primary mb-2">
                     {attraction.name}
                   </h3>
                   <p className="text-gray text-sm leading-relaxed">
@@ -88,9 +89,9 @@ const ExploreAsella = () => {
         </div>
       </section>
 
-      {/* Running Culture Section */}
-      <section className="py-20 px-4 bg-primary text-white">
-        <div className="max-w-6xl mx-auto">
+      {/* Bale Highlands Highlight */}
+      <section className="py-20 bg-primary text-white px-4">
+        <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <motion.div
               initial={{ opacity: 0, x: -30 }}
@@ -99,26 +100,26 @@ const ExploreAsella = () => {
               className="space-y-6"
             >
               <h2 className="text-4xl font-playfair font-bold">
-                The Heart of Ethiopian Running
+                The Afro-Alpine Crown of Ethiopia
               </h2>
               <p className="text-white text-opacity-90 leading-relaxed">
-                Asella is renowned as the training ground for some of the world's greatest distance runners. 
-                The high altitude (2,400 meters above sea level) and scenic landscapes make it the perfect 
-                location for athletes seeking to improve their endurance and performance.
+                Rising over 4,000 meters above sea level, the Bale Mountains contain the largest 
+                Afro-alpine habitat on the continent. It is the premier refuge for the critically endangered 
+                Ethiopian Wolf, the Mountain Nyala, and over 300 bird species.
               </p>
               <p className="text-white text-opacity-90 leading-relaxed">
-                Witness the dedication of local athletes during early morning training sessions, or join them 
-                for a run through the beautiful highlands. The city's running culture is a source of pride and 
-                inspiration for all visitors.
+                From crossing the expansive Sanetti Plateau along Africa's highest all-weather road to venturing 
+                into the wild coffee groves of the Harenna Forest, staying at Zerfe Hotel & Lounge places 
+                you right at the doorstep of these world-class expeditions.
               </p>
               <div className="grid grid-cols-2 gap-6 pt-6">
                 <div className="text-center">
-                  <div className="text-4xl font-playfair font-bold text-gold mb-2">2,400m</div>
-                  <div className="text-sm uppercase tracking-wider">Altitude</div>
+                  <div className="text-4xl font-playfair font-bold text-gold mb-2">4,377m</div>
+                  <div className="text-sm uppercase tracking-wider">Tullu Dimtu Peak</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-4xl font-playfair font-bold text-gold mb-2">100+</div>
-                  <div className="text-sm uppercase tracking-wider">Champions</div>
+                  <div className="text-4xl font-playfair font-bold text-gold mb-2">UNESCO</div>
+                  <div className="text-sm uppercase tracking-wider">World Heritage Site</div>
                 </div>
               </div>
             </motion.div>
@@ -129,8 +130,8 @@ const ExploreAsella = () => {
               className="relative h-96 rounded-luxury overflow-hidden shadow-2xl"
             >
               <img
-                src="https://images.pexels.com/photos/2803158/pexels-photo-2803158.jpeg?auto=compress&cs=tinysrgb&w=1920"
-                alt="Running in Asella"
+                src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80"
+                alt="Bale Mountains Landscape"
                 className="w-full h-full object-cover"
               />
             </motion.div>
@@ -150,15 +151,15 @@ const ExploreAsella = () => {
               Need Help Planning Your Visit?
             </h2>
             <p className="text-gray text-lg mb-8">
-              Our concierge team is ready to help you explore Asella and create unforgettable experiences
+              Our front desk and advisory team are happy to assist with directions, local transportation, and mountain guides
             </p>
             <motion.a
-              href="tel:+251223312828"
+              href={`tel:${hotelInfo.phones[0]}`}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="inline-block bg-gold text-white px-10 py-4 rounded-luxury text-lg font-medium hover:bg-opacity-90 transition-all"
             >
-              Contact Concierge
+              Contact Front Desk
             </motion.a>
           </motion.div>
         </div>

@@ -21,7 +21,7 @@ const Footer = () => {
     ],
     company: [
       { label: 'About Us', path: '/about' },
-      { label: 'Explore Asella', path: '/explore-asella' },
+      { label: 'Explore Bale', path: '/explore-bale' },
       { label: 'Contact', path: '/contact' },
     ],
   }
@@ -40,14 +40,14 @@ const Footer = () => {
           >
             <div className="flex flex-col">
               <span className="text-3xl font-playfair font-bold text-white">
-                DERARTU
+                ZERFE
               </span>
-              <span className="text-xs tracking-[0.3em] uppercase text-gold">
-                Hotel
+              <span className="text-xs tracking-[0.25em] uppercase text-gold">
+                Hotel & Lounge
               </span>
             </div>
             <p className="text-gray text-sm leading-relaxed">
-              Experience comfort and luxury in the heart of Asella. Where Ethiopian hospitality meets modern elegance.
+              Experience comfortable stays and vibrant dining in the heart of Bale Robe. Your premier base for exploring the Bale Mountains.
             </p>
             <div className="flex space-x-4">
               <motion.a
@@ -73,8 +73,10 @@ const Footer = () => {
               </motion.a>
               <motion.a
                 whileHover={{ scale: 1.1 }}
-                href={`https://t.me/${hotelInfo.telegram}`}
+                href={hotelInfo.telegramUrl || `https://t.me/${hotelInfo.telegram.replace('@', '')}`}
                 className="bg-white bg-opacity-10 p-2 rounded-full hover:bg-gold transition-colors"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <Send className="w-5 h-5" />
               </motion.a>
@@ -201,7 +203,7 @@ const Footer = () => {
         {/* Copyright */}
         <div className="border-t border-white border-opacity-10 pt-8 text-center">
           <p className="text-gray text-sm">
-            © {currentYear} Derartu Hotel. All rights reserved. | Designed with excellence for luxury hospitality.
+            © {currentYear} Zerfe Hotel & Lounge. All rights reserved. | Robe, Bale Zone, Oromia, Ethiopia
           </p>
         </div>
       </div>

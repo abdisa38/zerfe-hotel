@@ -26,7 +26,7 @@ const Navbar = () => {
     { path: '/rooms', label: 'Rooms' },
     { path: '/restaurant', label: 'Restaurant' },
     { path: '/conference', label: 'Conference' },
-    { path: '/explore-asella', label: 'Explore Asella' },
+    { path: '/explore-bale', label: 'Explore Bale' },
     { path: '/gallery', label: 'Gallery' },
     { path: '/about', label: 'About' },
     { path: '/contact', label: 'Contact' },
@@ -54,12 +54,12 @@ const Navbar = () => {
                 <span className={`text-2xl font-playfair font-bold ${
                   isScrolled || !isHome ? 'text-primary' : 'text-white'
                 }`}>
-                  DERARTU
+                  ZERFE
                 </span>
-                <span className={`text-xs tracking-[0.3em] uppercase ${
+                <span className={`text-[10px] tracking-[0.25em] uppercase ${
                   isScrolled || !isHome ? 'text-gold' : 'text-gold'
                 }`}>
-                  Hotel
+                  Hotel & Lounge
                 </span>
               </motion.div>
             </Link>
@@ -86,7 +86,7 @@ const Navbar = () => {
 
             {/* CTA Button */}
             <div className="hidden lg:flex items-center space-x-4">
-              <a href="tel:+251223312828" className={`flex items-center space-x-2 ${
+              <a href="tel:+251911234567" className={`flex items-center space-x-2 ${
                 isScrolled || !isHome ? 'text-primary' : 'text-white'
               }`}>
                 <Phone className="w-4 h-4" />

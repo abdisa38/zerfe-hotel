@@ -21,6 +21,7 @@ function App() {
           <Route path="rooms/:id" element={<RoomDetails />} />
           <Route path="restaurant" element={<Restaurant />} />
           <Route path="conference" element={<Conference />} />
+          <Route path="explore-bale" element={<ExploreAsella />} />
           <Route path="explore-asella" element={<ExploreAsella />} />
           <Route path="gallery" element={<Gallery />} />
           <Route path="about" element={<About />} />

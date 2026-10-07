@@ -25,9 +25,9 @@ const Restaurant = () => {
               A Culinary Journey
             </h2>
             <p className="text-gray leading-relaxed text-lg">
-              Experience the finest dining in Asella at Derartu Hotel's restaurant. Our expert chefs blend 
-              traditional Ethiopian recipes with international cuisine, using fresh local ingredients to create 
-              unforgettable flavors. From breakfast to dinner, every meal is a celebration.
+              Experience authentic dining and a vibrant social lounge atmosphere at Zerfe Hotel & Lounge in Robe, Bale. 
+              Our kitchen prepares traditional Ethiopian delicacies like our celebrated Bale Special Shekla Tibs, 
+              comforting international dishes, and freshly brewed highland coffee with genuine hospitality.
             </p>
           </motion.div>
         </div>

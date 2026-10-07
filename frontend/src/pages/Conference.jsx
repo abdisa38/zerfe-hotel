@@ -48,9 +48,9 @@ const Conference = () => {
               Your Event, Perfected
             </h2>
             <p className="text-gray leading-relaxed text-lg">
-              Derartu Hotel's conference hall provides the perfect setting for your business meetings, 
-              seminars, training sessions, weddings, and special events. Our modern facilities, professional 
-              staff, and attention to detail ensure your event runs smoothly and successfully.
+              Zerfe Hotel & Lounge provides a welcoming and reliable venue for your business meetings, 
+              workshops, organizational retreats, and celebratory gatherings in Robe, Bale. With backup power, 
+              high-speed Wi-Fi, and delicious catering, we make your event in Bale seamless and memorable.
             </p>
           </motion.div>
         </div>

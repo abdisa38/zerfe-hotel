@@ -50,21 +50,20 @@ const About = () => {
             </h2>
             <div className="space-y-6 text-gray leading-relaxed text-lg">
               <p>
-                Derartu Hotel has been a cornerstone of hospitality in Asella for over a decade. 
-                Located in the heart of Oromia, we have welcomed thousands of guests from around the world, 
-                offering them a home away from home in one of Ethiopia's most beautiful regions.
+                Zerfe Hotel & Lounge is a welcoming hospitality landmark located in the heart of Robe, 
+                Bale Zone, Oromia, Ethiopia. We offer restful accommodations, authentic local hospitality, 
+                and a vibrant lounge experience for business travelers, researchers, and tourists alike.
               </p>
               <p>
-                Our name, "Derartu," meaning "gold" in Oromo, reflects our commitment to providing 
-                golden experiences to every guest. From business travelers to families on vacation, 
-                from conference attendees to adventure seekers exploring the Bale Mountains, 
-                we cater to diverse needs with the same dedication to excellence.
+                Known locally as <span className="text-primary font-semibold">ዘርፌ ሆቴል እና ላውንጅ</span>, 
+                our establishment blends modern comfort with traditional Ethiopian generosity. Whether you are 
+                preparing for a trek across the scenic Bale Mountains or stopping by for an evening of fresh 
+                regional dining and cold refreshments, our doors are open with genuine care.
               </p>
               <p>
-                With 27 carefully designed rooms, an award-winning restaurant serving authentic Ethiopian 
-                and international cuisine, state-of-the-art conference facilities, and a team of passionate 
-                hospitality professionals, Derartu Hotel continues to set the standard for luxury 
-                accommodation in Asella.
+                With well-appointed guest rooms, 24/7 reliable hot showers, an automatic backup power generator, 
+                and an on-site restaurant serving specialties like Bale Special Shekla Tibs, Zerfe Hotel & Lounge 
+                is your ideal home away from home in Bale Robe.
               </p>
             </div>
           </motion.div>
@@ -81,7 +80,7 @@ const About = () => {
             className="text-center mb-12"
           >
             <h2 className="text-4xl font-playfair font-bold text-primary mb-4">
-              Derartu Hotel by the Numbers
+              Zerfe Hotel & Lounge by the Numbers
             </h2>
           </motion.div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
@@ -194,18 +193,17 @@ const About = () => {
             viewport={{ once: true }}
           >
             <h2 className="text-4xl font-playfair font-bold text-primary mb-6">
-              Perfectly Located in Asella
+              Perfectly Located in Bale Robe
             </h2>
             <p className="text-gray leading-relaxed text-lg mb-8">
-              Situated in the heart of Asella, Derartu Hotel offers easy access to the city's main attractions, 
-              including Arsi University, local markets, and the stadium where Ethiopia's running legends train. 
-              We're also the perfect base for exploring the stunning natural beauty of the surrounding highlands 
-              and the nearby Bale Mountains National Park.
+              Situated along the main commercial corridor in Robe, Zerfe Hotel & Lounge provides effortless access to local markets, 
+              transport terminals, and Robe Airport (GOB). We serve as the premier base camp for exploring the UNESCO-listed 
+              Bale Mountains National Park, the dramatic Sanetti Plateau, the mist-covered Harenna Forest, and Sof Omar Caves.
             </p>
             <div className="aspect-video rounded-luxury overflow-hidden shadow-2xl">
               <img
-                src="https://images.pexels.com/photos/1761279/pexels-photo-1761279.jpeg?auto=compress&cs=tinysrgb&w=1920"
-                alt="Asella City"
+                src="https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=1600&q=80"
+                alt="Bale Mountains Landscape"
                 className="w-full h-full object-cover"
               />
             </div>
